@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventify</title>
+    <link href="img/website.jpeg" rel="icon">
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to your main CSS file -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap styles -->
+    <style>
+        /* Apply styles from your CSS template */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+            margin: 0;
+            text-align: center;
+            color: var(--light);
+        }
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 40px;
+            animation: fadeInDown 1s ease forwards;
+        }
+        h4{
+          
+            color: white;
+            margin-bottom: 40px;
+            animation: fadeInDown 1s ease forwards;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 4rem;
+            height: 4rem;
+            border: 0.5rem solid rgba(255, 255, 255, 0.6);
+            border-top: 0.5rem solid var(--light);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        #percentage {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #FFFFFF;
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        .loading-message {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            color: white;
+            animation: fadeInUp 1.5s ease forwards;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Welcome to the Eventify Platform</h2>
+
+        <!-- <h4>  Illuminating minds for unfolding excellence </h4> -->
+    
+        <!-- Spinner -->
+        <div class="spinner"></div>
+
+        <!-- Percentage with creative styling -->
+        <div id="percentage">0%</div>
+
+        <!-- Loading message -->
+        <p class="loading-message">Loading....</p>
+    </div>
+
+    <script>
+        // Function to update the percentage from 0 to 100
+        let percentage = 0;
+        const percentageElement = document.getElementById('percentage');
+        
+        const interval = setInterval(function() {
+            percentage += 1;
+            percentageElement.textContent = percentage + "%";
+            if (percentage >= 100) {
+                clearInterval(interval); // Stop the interval when it reaches 100%
+            }
+        }, 30); // Updates the percentage every 30ms (for a 3-second period)
+
+        // Redirect to index.html after 3 seconds
+        setTimeout(function () {
+            window.location.href = "http://localhost:4000/dashboard"; // Change this to your main page
+        }, 3000);
+    </script>
+</body>
+
+</html>

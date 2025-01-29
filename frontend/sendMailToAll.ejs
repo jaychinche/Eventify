@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Eventify</title>
+    <link href="img/website.jpeg" rel="icon">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+   
+   
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <div class="container-xxl bg-white p-0">
+            <!-- Navbar Start -->
+            
+            <div class="container-xxl position-relative p-0" id="home">
+           
+                <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                    <a href="http://localhost:4000/dashboard" class="navbar-brand p-0">
+                   
+                        <h1 class="m-0">Eventify</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto py-0">
+                            <a href="http://localhost:4000/dashboard" class="nav-item nav-link">Home</a>
+                            <a href="http://localhost:4000/dashboard" class="nav-item nav-link">About</a>
+                            <a href="http://localhost:4000/dashboard" class="nav-item nav-link active">Event Details</a>
+                            <a href="http://localhost:4000/dashboard" class="nav-item nav-link">Contact</a>
+                            <a href="http://localhost:4000/dashboard" class="nav-item nav-link">Login</a>
+                            <a href="http://localhost:4000/dashboard" class="nav-item nav-link">Log out</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Navbar End -->
+         <!-- Send Mail Start -->
+          <div class="send-mail-section">
+        <div class="container-xxl bg-primary hero-header min-vh-100 d-flex align-items-center justify-content-center send-mail-section" style="background-color: #007bff;">
+            <div class="container py-1 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-white fw-medium">Send Mail</h5>
+                        <h1 class="mb-4" style="color: white;">Communicate Efficiently</h1>
+                        <p class="mb-4 text-light">Fill in the form to send an email to all students. Ensure proper details and a clear message.</p>
+                        <form action="http://localhost:4000/sendmail" method="post">
+                            <div class="mb-3">
+                                <label for="emailSubject" class="form-label text-white">Subject</label>
+                                <input type="text" class="form-control" id="emailSubject" placeholder="Enter email subject" name="subject" style="background-color: #f1f1f1;">
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailBody" class="form-label text-white">Message</label>
+                                <textarea class="form-control" id="emailBody" rows="5" placeholder="Enter email message" name="message" style="background-color: #f1f1f1;"></textarea>
+                            </div>
+                            <button type="submit"  class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">Send Email</button>
+                            <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Send Mail End -->
+    </div>
+
+        
+       
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <!-- Footer content here -->
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

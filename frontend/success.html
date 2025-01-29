@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Success - FitApp</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #6c63ff, #3498db);
+            color: white;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 3rem; /* Adjusted size to match the welcome page */
+            font-weight: 700;
+            color: white;
+            animation: fadeInDown 1s ease forwards;
+        }
+
+        p {
+            font-size: 1.5rem; /* Size matches welcome page */
+            margin: 20px 0;
+            color: #FFFFFF;
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 4rem; /* Increased spinner size for visibility */
+            height: 4rem;
+            border: 0.5rem solid rgba(255, 255, 255, 0.6);
+            border-top: 0.5rem solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-top: 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="text-center">
+        <h2>Success!</h2>
+        <!-- <p>Thank you for contacting us. Redirecting to the homepage...</p> -->
+        <div class="spinner"></div>
+    </div>
+
+    <script>
+        // Redirect to the homepage after 3 seconds
+        setTimeout(function() {
+            window.location.href = 'MainPage.html'; // Change this to your homepage URL
+        }, 3000);
+    </script>
+</body>
+</html>
