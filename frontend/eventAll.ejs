@@ -66,26 +66,26 @@
          </button>
          <div class="collapse navbar-collapse" id="navbarCollapse">
              <div class="navbar-nav mx-auto py-0">
-                 <a href="http://localhost:4000/dashboard" class="nav-item nav-link active">Home</a>
-                 <a href="http://localhost:4000/dashboard" class="nav-item nav-link">About Us</a>
+                 <a href="http://eventify-1-ixhs.onrender.com/dashboard" class="nav-item nav-link active">Home</a>
+                 <a href="http://eventify-1-ixhs.onrender.com/dashboard" class="nav-item nav-link">About Us</a>
                  <!-- <a href="Ot.html" class="nav-item nav-link">Organize Talks</a> -->
-                 <a href="http://localhost:4000/dashboard" class="nav-item nav-link">Contact</a>
+                 <a href="http://eventify-1-ixhs.onrender.com/dashboard" class="nav-item nav-link">Contact</a>
 
                  <% if (user.userType==='admin' ) { %>
-                     <a href="http://localhost:4000/events" class="nav-item nav-link">Add Event</a>
+                     <a href="http://eventify-1-ixhs.onrender.com/events" class="nav-item nav-link">Add Event</a>
                      <% } %>
 
                          <% if(!token){%>
-                             <a href="http://localhost:4000/users/login" class="nav-item nav-link">Login</a>
+                             <a href="http://eventify-1-ixhs.onrender.com/users/login" class="nav-item nav-link">Login</a>
                              <%}%>
                              
                              <% if(token){%>
-                                 <a href="http://localhost:4000/users/logout" class="nav-item nav-link">Log
+                                 <a href="http://eventify-1-ixhs.onrender.com0/users/logout" class="nav-item nav-link">Log
                                      out</a>
                                      <%}%>
              </div>
              <% if (user.userType==='admin' ) { %>
-             <a href="http://localhost:4000/sendmail"
+             <a href="http://eventify-1-ixhs.onrender.com/sendmail"
                  class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Message to
                  All</a>
                  <% } %>
