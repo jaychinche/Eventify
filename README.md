@@ -1,4 +1,3 @@
-<img width="1440" alt="Screenshot 2025-01-30 at 12 54 43 PM" src="https://github.com/user-attachments/assets/23387f67-afe9-4e9c-af0b-38339b4383c9" /># Eventify - College Club Event Management Website
 
 ## 📌 Overview
 Eventify is a full-stack web application designed to streamline college event management. It allows students to register for events, receive notifications, and make payments while providing admins with tools to manage event registrations efficiently.
